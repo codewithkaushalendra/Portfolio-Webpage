@@ -513,7 +513,155 @@ body {
     border:2px solid #00eeff;
     box-shadow:0 0 20px #00eeff;
 }
+
+.footer{
+    background:#051129;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.footer h3{
+    color:#00eeff;
+    margin-bottom:10px;
+}
+
+.footer p{
+    color:#ddd;
+    margin:10px 0;
+}
+
+.footer-social a{
+    display:inline-flex;
+    width:45px;
+    height:45px;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #00eeff;
+    color:#00eeff;
+    border-radius:50%;
+    margin:10px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:#00eeff;
+    color:#081b29;
+}
 /* Responsive */
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+/* Laptop */
+@media (max-width:1200px){
+    .header{padding:18px 6%;}
+    .home,.about,.services-section,.skills,.portfolio,.contact{
+        padding-left:6%;
+        padding-right:6%;
+    }
+}
+
+/* Tablet */
+@media (max-width:991px){
+
+    .home{
+        flex-direction:column-reverse;
+        justify-content:center;
+        text-align:center;
+        gap:40px;
+        height:auto;
+        padding:120px 6% 70px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .home-img img,
+    .about-img img{
+        width:280px;
+        height:280px;
+    }
+
+    .navbar a{
+        margin-left:18px;
+        font-size:18px;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .header{
+        padding:15px 5%;
+        flex-wrap:wrap;
+    }
+
+    .navbar{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        margin-top:15px;
+        gap:12px;
+    }
+
+    .navbar a{
+        margin:0;
+        font-size:16px;
+    }
+
+    .home-content h1{
+        font-size:38px;
+    }
+
+    .home-content h3{
+        font-size:24px;
+    }
+
+    .sub-title{
+        font-size:38px;
+    }
+
+    .service-list{
+        grid-template-columns:1fr;
+    }
+
+    .home-img img,
+    .about-img img{
+        width:220px;
+        height:220px;
+    }
+
+    .search-box{
+        width:100%;
+        margin-top:15px;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+    .home-content h1{
+        font-size:30px;
+    }
+
+    .home-content h3{
+        font-size:20px;
+    }
+
+    .btn-box{
+        width:100%;
+        text-align:center;
+    }
+}
 
 @media(max-width:768px){
 
